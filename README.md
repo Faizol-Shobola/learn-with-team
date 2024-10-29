@@ -1,6 +1,6 @@
 # Learn with Team
 
-**Learn with Team** A Collaborative project that allow participants gain hands-on experience with modern web development tools and practices, such as Git and GitHub collaboration.
+**Learn with Team** A Collaborative project that allow participants gain hands-on experience with modern web development tools and practices, such as Git and GitHub collaboration. The program emphasizes practical learning and teamwork, enabling students to build a solid foundation in full-stack development.
 
 ## Project Overview
 
@@ -26,7 +26,7 @@ The **Learn with Team** platform allows students to:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/learn-with-team.git
+   git clone https://github.com/Faizol-Shobola/learn-with-team.git
 
 2. **Navigate to the project directory**:
    ```bash
