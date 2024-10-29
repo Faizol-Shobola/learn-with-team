@@ -1,0 +1,149 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --primary-color: #4420BC; /* Dark purple */
+    --secondary-color-one: #DBB35E; /* Dark Yellow */
+    --secondary-color-two: #FFBD35; /* Light Yellow */
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --light-background: #e0e7ff;
+    --footer-bg-color: #333;
+    --footer-link-color: #f97316;
+    --footer-link-hover-color: #e0e7ff;
+
+    /* Font Sizes */
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --font-size-xl: 40px;
+}
+
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    background-color: var(--primary-color);
+    padding: 16px 0;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}
+
+.header .nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.header .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+}
+
+.login-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.get-started-btn {
+    background-color: var(--secondary-color-two);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 48px 16px;
+    background-color: var(--light-background);
+}
+
+.hero h1 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: var(--font-size-lg);
+    margin-bottom: 24px;
+}
+
+.hero-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: var(--font-size-base);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.footer .social-links a {
+    color: var(--footer-link-color);
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: var(--footer-link-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
