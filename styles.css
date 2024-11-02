@@ -40,51 +40,206 @@ body {
 }
 
 /* Header Section */
+.before-header{
+    text-align: center;
+}
+.before-header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
 .header {
     background-color: var(--primary-color);
     padding: 16px 0;
     color: #fff;
 }
 
-.header-container {
+.navbar-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
 }
-
-.header .logo {
-    font-size: var(--font-size-lg);
-    font-weight: bold;
+.navbar-container .nav-center span{
+    display: inline-block;
+    transform: rotate(90deg);
 }
-
-.header .nav {
+.navbar-container .nav-center {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.header .nav a {
-    color: #fff;
+.navbar-container .nav-center a {
+    color: var(--text-color);
     text-decoration: none;
     padding: 8px 16px;
+    font-weight: 600;
 }
 
-.header .btn {
-    padding: 8px 16px;
-    border: none;
+.menu-wrapper{
+    position: absolute;
+    top: 100%;
+    display: none;
+    transition: display 0.5s;
+}
+
+.second-wrapper{
+    left: 47%;
+}
+
+.menu-wrapper.show-menu{
+    display: block;
+}
+
+.menu-wrapper .drop-down-menu{
+    background-color: var(--background-color);
+    padding: 10px;
+    box-shadow: 0px 5px 20px #a7a7a7;
     border-radius: 5px;
+}
+.menu-wrapper .drop-down-menu a{
+    font-weight: 500;
+}
+.menu-wrapper .drop-down-menu a:hover{
+    font-weight: 600;
+}
+
+
+.second-menu a{
+    display: block;
+}
+
+
+.navbar .btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: var(--font-size-base);
 }
 
-.login-btn {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.get-started-btn {
-    background-color: var(--secondary-color-two);
+.login-btn {
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid #333;
+    font-weight: 600;
+}
+.login-btn:hover{
+    background-image: linear-gradient(var(--secondary-color-one),var(--secondary-color-two));
+    color: white;
+    border: 1px solid var(--secondary-color-two);
+}
+
+.enroll-btn {
+    background-color: var(--primary-color);
     color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.enroll-btn:hover{
+    background-image: linear-gradient(var(--secondary-color-one),var(--secondary-color-two));
+    color: white;
+}
+
+.menu-btn{
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.navbar hr{
+    height: 1px;
+    width: 100%;
+    background-color: #c5c5c5;
+    border: none;
+}
+@media (max-width:1023px){
+    .hidden{
+        display: none !important;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+/* Sidebar Design*/
+.sidebar{
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    width: 100vw;
+    z-index: 999;
+    background-color: var(--background-color);
+    display: none;
+}
+.sidebar .first-block button{
+    border: none;
+    background-color: transparent;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    padding: 0 10px;
+}
+.sidebar .first-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar .second-block .with-dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar .second-block .with-dropdown:hover{
+    cursor: pointer;
+}
+.sidebar .second-block .with-dropdown p{
+    transition: transform 0.5s;
+}
+.sidebar .second-block .with-dropdown:hover p{
+    transform: translateX(5px);
+}
+.sidebar .second-block a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.sidebar .second-block .droped{
+    margin-bottom: 10px;
+    display: none;
+}
+.sidebar .second-block .droped a{
+    font-weight: 500;
+    display: block;
+}
+.sidebar .second-block .droped a:hover{
+    font-weight: 600;
+}
+.droped.droping-menu{
+    display: block !important;
+}
+.sidebar .second-block .last-links{
+    display: block;
+}
+.sidebar .third-block{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar .third-block button{
+    width: 100%;
 }
 
 /* Hero Section */

@@ -9,19 +9,69 @@
 <body>
     <!-- Header Section -->
     <header class="header">
-        <div class="container header-container">
-            <div class="logo">Learn with Team</div>
-            <nav class="nav">
-                <a href="#programs">Programs</a>
-                <a href="#about">About Us</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-            <div class="nav-buttons">
+        <div class="before-header">Fullstack Web Development Bootcamp <a href="#">Application Now Open &#10141</a></div>
+    </header>
+    <nav class="navbar">
+        <div class="sidebar">
+            <div class="first-block">
+                <div class="logo">
+                    <img src="Assets/TPU LOGO 1.png" alt="TPU Logo">
+                </div>
+                <button class="close-btn open-close" onclick="hideSidebar()">&#10005</button>
+            </div>
+            <div class="second-block">
+                <div class="with-dropdown">
+                    <a href="#programs">Programs</a>
+                    <p>&#10095</p>
+                </div>
+                <div class="droped">
+                    <a href="#">Fullstack Web Development (Bootcamp)</a>
+                </div>
+                <div class="with-dropdown">
+                    <a href="#community">Community</a>
+                    <p>&#10095</p>
+                </div>
+                <div class="droped">
+                    <a href="#">Whatsapp</a>
+                    <a href="#">Telegram</a>
+                </div>
+                <a href="#about" class="last-links">About Us</a>
+                <a href="#faq" class="last-links">FAQ</a>
+            </div>
+            <div class="third-block">
                 <button class="btn login-btn">Login</button>
-                <button class="btn get-started-btn">Get Started</button>
+                <button class="btn enroll-btn">Enroll Now</button>
             </div>
         </div>
-    </header>
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="Assets/TPU LOGO 1.png" alt="TPU Logo">
+            </div>
+            <div class="nav-center hidden">
+                <a href="#programs" class="to-drop">Programs <span>&#10095</span></a>
+                <div class="menu-wrapper">
+                    <div class="drop-down-menu">
+                        <a href="#">Fullstack Web Development Bootcamp</a>
+                    </div>
+                </div>
+                <a href="#" class="to-drop">Community <span>&#10095</span></a>
+                <div class="menu-wrapper second-wrapper">
+                    <div class="drop-down-menu second-menu">
+                        <a href="#">Whatsapp</a>
+                        <a href="#">Telegram</a>
+                    </div>
+                </div>
+                <a href="#about">About Us</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn login-btn hidden">Login</button>
+                <button class="btn enroll-btn hidden">Enroll Now</button>
+                <button class="menu-btn open-close" onclick="showSidebar()">&#9776</button>
+            </div>
+        </div>
+        <hr>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -43,5 +93,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
