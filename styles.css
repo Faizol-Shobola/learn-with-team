@@ -282,6 +282,7 @@ body {
     background-color: var(--background-color);
     padding: 40px 0;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .partners p{
@@ -304,9 +305,98 @@ body {
 }
 
 @media (max-width:768px){
+    .partners .logo-container{
+        overflow: hidden;
+        width: 100%;
+    }
     .partners .logo-container .logos img{
         height: 30px;
     }
+}
+
+/*Online Programs Section*/
+.online-programs{
+    background-color: var(--primary-color);
+    padding: 30px 20px;
+}
+.online-programs .programs-header h2{
+    font-size: var(--font-size-xl);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.online-programs .programs-header p{
+    color: white;
+    margin: auto; /*text-align: center needed it to function on p element after the width was set*/
+    width: 45%;
+    text-align: center;
+}
+@media (max-width : 1000px){
+    .online-programs .programs-header p{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width : 768px){
+    .online-programs .programs-header p{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width : 470px){
+    .online-programs .programs-header h2{
+        font-size: 35px;
+    }
+}
+.middle-container{
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+/*
+.middle-container:hover{
+    height: 40px;
+}*/
+.middle-container .blue-bar{
+    background-color: rgb(0, 160, 253);
+    height: 30px;
+    border-radius: 20px 20px 0 0;
+}
+.middle-container .text-container{
+    padding: 20px 20px 50px;
+    color: var(--text-color);
+}
+.middle-container .text-container h3{
+    font-size: var(--font-size-lg);
+}
+.middle-container .text-container span{
+    color: var(--primary-color);
+}
+.middle-container .text-container p{
+    font-size: var(--font-size-base);
+    margin: 10px 0;
+}
+
+@media (max-width: 360px){
+    .middle-container .text-container h3{
+        font-size: 18px;
+    }
+    .middle-container .text-container p{
+        text-align: left;
+    }
+}
+.middle-container .text-container button{
+    border: none;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 5px;
+}
+.middle-container .text-container button:hover{
+    background-color: var(--secondary-color-two);
 }
 
 /* Footer Section */
