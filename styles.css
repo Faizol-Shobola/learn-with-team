@@ -43,6 +43,7 @@ body {
 .before-header{
     text-align: center;
 }
+
 .before-header a{
     text-decoration: none;
     color: white;
@@ -172,6 +173,13 @@ body {
         display: block;
     }
 }
+@media (max-width: 475px){
+    .before-header{
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
 /* Sidebar Design*/
 .sidebar{
     padding: 10px 20px;
@@ -292,8 +300,8 @@ body {
     margin-bottom: 20px;
 }
 .logo-container{
-    width: 80%;
     display: flex;
+    overflow: hidden;
 }
 .logos{
     display: flex;
@@ -317,7 +325,7 @@ body {
 /*Online Programs Section*/
 .online-programs{
     background-color: var(--primary-color);
-    padding: 30px 20px;
+    padding-top: 30px;
 }
 .online-programs .programs-header h2{
     font-size: var(--font-size-xl);
@@ -352,7 +360,7 @@ body {
     background-color: white;
     border-radius: 20px;
     transition: all 0.3s ease;
-    margin-top: 20px;
+    margin: 20px 20px 100px;
 }
 /*
 .middle-container:hover{
@@ -398,6 +406,59 @@ body {
 .middle-container .text-container button:hover{
     background-color: var(--secondary-color-two);
 }
+
+.grid-section{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 40px;
+}
+.grid-section .grid-header{
+    text-align: center;
+}
+.grid-section .grid-header h2{
+    font-size: var(--font-size-xl);
+}
+.grid-section .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-top: 30px;
+}
+.grid-section .grid-container .grid-element{
+    border: 1px solid var(--light-background);
+    text-align: left;
+    padding: 20px;
+}
+.grid-section .grid-container .grid-element .fa{
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+}
+.grid-section .grid-container .grid-element .bold-text{
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+@media (max-width: 500px){
+    .grid-section .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 80%;
+        margin-top: 30px;
+    }
+    .grid-section .grid-header{
+        width: 80%;
+    }
+    .grid-section .grid-header h2{
+        font-size: 30px;
+    }
+    .grid-section .grid-container .grid-element .bold-text{
+        font-size: 18px;
+    }
+}
+
 
 /* Footer Section */
 .footer {
